@@ -14,19 +14,24 @@ myForEach(['a', 'b', 'c'], function (el, i) {
 // b is at index 1
 // c is at index 2
 
-let test = [];
-myForEach(['laika', 'belka'], function (el) {
-    test.push(el.toUpperCase());
-});
-console.log(test); // ['LAIKA', 'BELKA']
+
 *******************************************************************************/
 
-let myForEach = function() {
+let myForEach = function(arr, cb) {
+    for(let i = 0; i < arr.length; i++){
+        let ele = arr[i]
+        cb(ele, i, arr)
+    }
+
 
 };
 
 
 
-
+let test = [];
+myForEach(['laika', 'belka'], function (el) {
+    test.push(el.toUpperCase());
+});
+console.log(test); // ['LAIKA', 'BELKA']
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 module.exports = myForEach;

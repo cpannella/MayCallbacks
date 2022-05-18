@@ -5,6 +5,14 @@ through the callback n times.
 
 Examples:
 
+
+*******************************************************************************/
+
+let multiMap = function(val, n, cb){
+  return 
+
+};
+
 let result1 = multiMap(7, 2, function(n) {
   return n * 10;
 });
@@ -19,13 +27,6 @@ let result3 = multiMap("hi", 5, function(s) {
   return s + "!";
 });
 console.log(result3); // hi!!!!!
-*******************************************************************************/
-
-let multiMap = function() {
-
-};
-
-
 
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
